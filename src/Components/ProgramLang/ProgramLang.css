@@ -1,0 +1,28 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width:50%;
+    margin: 20px auto;
+}
+td, th {
+    border: 1px solid Gray;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: LightGray;
+}
+.add {
+    width:50%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 25px;
+}
+.add input {
+    font-size: 20px;
+}
+button {
+    background-color: DodgerBlue;
+    color: #fff;
+    font-size: 20px;
+}
