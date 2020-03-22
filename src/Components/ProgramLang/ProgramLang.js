@@ -9,7 +9,7 @@ export default class AddProgramLan extends Component {
             {Lang: "Java Script"},
             {Lang: "PHP"}
         ],
-        value: '',
+        value: ''
     }
     //-------------------------------//
     ProgramLan =()=> {
@@ -54,9 +54,11 @@ export default class AddProgramLan extends Component {
     //-------------------------------//
     AddProgramLang =()=> {
         const ProgramLang = [...this.state.ProgramLang];
+        var inputValue = this.state.value;
+        if (inputValue !==''){
         ProgramLang.push({
-            Lang: this.state.value,
-        });
+            Lang: inputValue,
+        })}
         this.setState({
             ProgramLang,
             value: ''
